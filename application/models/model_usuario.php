@@ -2,11 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-/**
- * Modelo model_usuario - Efetua a busca dos dados no banco
- *
- * @author Wagner
- */
+
 class Model_usuario extends CI_Model {
 
       function login($login, $senha) {

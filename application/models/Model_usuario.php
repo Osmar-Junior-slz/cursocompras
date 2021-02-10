@@ -2,11 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-/**
- * Modelo model_usuario - Efetua a busca dos dados no banco
- *
- * @author Wagner
- */
+
 class Model_usuario extends CI_Model {
 
       function login($login, $senha) {
@@ -53,18 +49,18 @@ class Model_usuario extends CI_Model {
       //       }
       // }
 
-      // function buscaUsuarios() {
-      //       $this->db->select('*');
-      //       $this->db->from('usuarios');
-      //       $this->db->where('status', '1');
+      function buscaUsuarios() {
+            $this->db->select('*');
+            $this->db->from('usuarios');
+            $this->db->where('status', '1');
 
-      //       $query = $this->db->get();
-      //       if ($query->num_rows() >= 1) {
-      //             return $query->result();
-      //       } else {
-      //             return false;
-      //       }
-      // }
+            $query = $this->db->get();
+            if ($query->num_rows() >= 1) {
+                  return $query->result();
+            } else {
+                  return false;
+            }
+      }
 
       // function consultausuario($dados = NULL) {
       //       if ($dados !== NULL) {

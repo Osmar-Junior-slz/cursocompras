@@ -19,21 +19,20 @@
                               <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         </a>
                   </li>
+                  
                   <li class=" treeview">
                         <a href="#">
                               <i class="fa fa-users"></i>
-                              <span>Usu&aacute;rios</span>
+                              <span>Cursos</span>
                               <span class="pull-right-container">
                                     <i class="fa fa-angle-left pull-right"></i>
                               </span>
                         </a>
                         <ul class="treeview-menu">
-                              <li><a href="cadastrausuario"><i class="fa fa-circle-o"></i> Cadastro</a></li>
-                              <li><a href="consultausuario"><i class="fa fa-circle-o"></i> Consulta</a></li>
-                              <li><a href="listausuario"><i class="fa fa-circle-o"></i> Lista</a></li>
-<!--                              <li><a href="#"><i class="fa fa-circle-o"></i> Relat&oacute;rio</a></li>-->
+                              <li><a href="listcursos"><i class="fa fa-circle-o"></i> Listar Cursos</a></li>
                         </ul>
                   </li>
+
                   
             </ul>
       </section>

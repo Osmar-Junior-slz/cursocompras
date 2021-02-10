@@ -70,44 +70,9 @@ $route['profile'] = "home/profile";
 
 
 /*
- * Cliente
+ * Cursos
  */
-$route['cadastracliente'] = "home/cadastracliente";
-$route['consultacliente'] = "home/consultacliente";
-$route['listacliente'] = "home/listacliente";
-$route['alteracliente'] = "home/alteracliente";
-
-/*
- * Produtos
- */
-$route['cadastraproduto'] = "home/cadastraproduto";
-$route['consultaproduto'] = "home/consultaproduto";
-$route['listaproduto'] = "home/listaproduto";
-$route['alteraproduto'] = "home/alteraproduto";
-
-/*
- * Pedidos
- */
-$route['novopedido'] = "home/novopedido";
-$route['alterarpedido'] = "home/alterarpedido";
-$route['consultarpedido'] = "home/consultarpedido";
-$route['emissaopedido'] = "home/emissaopedido";
-
-/*
- * Relatórios
- */
-$route['relatorioclientes'] = "home/relatorioclientes";
-$route['relatoriopedidos'] = "home/relatoriopedidos";
-$route['relatorioprodutos'] = "home/relatorioprodutos";
-
-/*
- * Agenda
- */
-$route['agenda'] = "home/agenda";
-
-
-
-$route['geracodigobarras'] = "home/geracodigobarras";
+$route['listcursos'] = "home/listcursos";
 
 
 
