@@ -6,6 +6,6 @@
       	echo date('d/m/Y H:i:s');
       ?>
     </div>
-    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="https://www.youtube.com/wagnerfariadossantos" target="_blank">Sistema You Tube</a>.</strong> Todos os direitos Reservados.
+    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="#" target="_blank">Sistema Compras Online</a>.</strong> Todos os direitos Reservados.
     <br>
   </footer>

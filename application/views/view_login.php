@@ -19,36 +19,43 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="../../index2.html" class="h2"><b>Compras on line</b></a>
+      <a href="../../index2.html" class="h2"><b>Compras</b> on line</a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Acesso Restrito</p>
+      <p class="login-box-msg">Digite seu email e usuário para acessar</p>
 
-      <form action="../../index3.html" method="post">
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
+      <?php
+        echo form_open('autentica');
+        echo validation_errors();
+    ?>
+      <div class="form-group has-feedback">
+        <?php echo form_error('username'); ?>
+<input type="text" name="login" id="login" placeholder="Email" class="form-control" value="<?php echo set_value('login'); ?>"  />
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+          <?php echo form_error('password'); ?>
+          <input type="password" name="senha" placeholder="Senha" class="form-control" id="senha" value=""  />
+        
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          
         </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Senha">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
+        <!-- /.col -->
+        <div class="col-xs-6" >
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Entrar</button>
         </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
-          </div>
-          <!-- /.col -->
-        </div>
-      </form>
+        <!-- /.col -->
+      </div>
+    <?php
+    echo form_close();
+?>
 
+      <p class="mb-1">
+        <a href="#">Esqueci minha senha</a>
+      </p>
       
     </div>
     <!-- /.card-body -->

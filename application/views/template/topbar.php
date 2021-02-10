@@ -1,21 +1,15 @@
-<?php
-$session_youtube = $this->session->userdata('logged_in');
-$nomeUsuario = $session_youtube['nomeUsuario'];
 
-$emailUsario = $session_youtube['emailUsario'];
-$datacadastro = $session_youtube['datacadastro'];
-?>
 <header class="main-header">
 
     <!-- Logo -->
     <a href="dashboard" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-<!--         <span class="logo-mini"><b>Sistema </b>YouTUBE</span> -->
+<!--         <span class="logo-mini"><b>Gestão </b>Compras</span> -->
         <span class="logo-mini"><img src="assets/img/logo_youtube.png" style="width: 48px; height: 48px"></span>
 
 
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>Sistema </b>YouTUBE</span>
+        <span class="logo-lg"><b>Gestão </b>Compras</span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -224,7 +218,7 @@ $datacadastro = $session_youtube['datacadastro'];
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="../assets/img/01avatar.png" class="user-image" alt="User Image">
-                        <span class="hidden-xs"><?php echo $nomeUsuario; ?></span>
+                        <span class="hidden-xs"></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
@@ -232,8 +226,8 @@ $datacadastro = $session_youtube['datacadastro'];
                             <img src="../assets/img/01avatar.png" class="img-circle" alt="User Image">
 
                             <p>
-                                <?php echo $nomeUsuario; ?>
-                                <small>Membro desde <?php echo $datacadastro; ?><br> <?php echo $emailUsario; ?></small>
+                               
+                                <small>Membro desde 12/12/2001<br> Osmar Junior</small>
                             </p>
                         </li>
                         <!-- Menu Body -->
