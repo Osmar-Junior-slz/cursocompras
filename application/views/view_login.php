@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in (v2)</title>
+  <title>Gestão de Compras</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -18,7 +18,9 @@
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
-    
+    <div class="card-header text-center">
+      <a href="../../index2.html" class="h2"><b>Compras on line</b></a>
+    </div>
     <div class="card-body">
       <p class="login-box-msg">Acesso Restrito</p>
 
@@ -32,23 +34,21 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
-        <div class="row">
-            <button type="submit" class="btn btn-primary btn-block">Acessar</button>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          </div>
+          <!-- /.col -->
         </div>
       </form>
 
-     
-
-      <p class="mb-1">
-        <a href="forgot-password.html">Esqueci a senha</a>
-      </p>
       
     </div>
     <!-- /.card-body -->
