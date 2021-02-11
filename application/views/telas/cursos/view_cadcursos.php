@@ -31,8 +31,9 @@
                                                 <thead>
                                                       <tr>
                                                             
-                                                            <th>Curso</th>
-                                                            <th>Preco</th>
+                                                            <th width="60%;">Curso</th>
+                                                            <th width="30%;">Preco</th>
+                                                            <th width="10%;"> Imagem</th>
                                                       </tr>
                                                 </thead>
                                                 <tbody>
@@ -43,6 +44,7 @@
                                                                   <tr>
                                                                         <td><?php echo $usuarios->nome_cursos; ?></td>
                                                                         <td><?php echo $usuarios->preco; ?></td>
+                                                                        <td><img width="100px" height="80px"src="<?php echo $usuarios->url_imagem; ?>" > </td>
                                                                   </tr>
                                                                   <?php
                                                             }
