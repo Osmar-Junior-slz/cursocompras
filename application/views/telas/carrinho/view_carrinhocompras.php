@@ -60,7 +60,9 @@
                                 </tbody>
                             </table>
                             <div class="form-group" style="margin-top: 2%;">
-                                <div class="col-xs-12 col-sm-9 col-lg-9">&nbsp;</div>
+                                <div class="col-xs-12 col-sm-9 col-lg-9">
+                                    <button type="submit" class="btn btn-primary" style="width: 100%">Finalizar Compra</button>
+                                </div>
                                 <div class="col-xs-12 col-sm-3 col-lg-3">
                                     <label for="preco" style="font-size: 18px;" class="control-label"> Total da Compra R$ <?php echo $total ?></label>
                                 </div>
