@@ -74,6 +74,7 @@ $route['profile'] = "home/profile";
  */
 $route['listcursos'] = "home/listcursos";
 $route['consultacursos'] = "home/consultacursos";
+$route['listcarrinho'] = "home/carrinho";
 
 
 

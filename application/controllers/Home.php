@@ -125,14 +125,14 @@ class Home extends CI_Controller
 
             $dadoscarrinho['curso_id'] = $this->input->post('id');
             $dadoscarrinho['preco'] = $this->input->post('preco');
-
+            $dadoscarrinho['nomecurso'] = $this->input->post('nome_cursos');
+            $dadoscarrinho['url'] = $this->input->post('url');
 
             $this->load->model('model_carrinho');
             $resultadocadastrousuario = $this->model_carrinho->cadastroCarrinho($dadoscarrinho);
 
             if ($resultadocadastrousuario) {
-                $dados['telaativa'] = 'cursos';
-                $dados['tela'] = 'view_dashboard';
+                redirect('home/listcarrinho', 'refresh');
             } else {
                 $dados['telaativa'] = 'cursos';
                 $dados['msg'] = 'Ocorreu um erro ao cadastrar o curso! Atualize a página e tente novamente';
@@ -143,6 +143,31 @@ class Home extends CI_Controller
             $dados['telaativa'] = 'cursos';
             $dados['tela'] = 'cursos/view_cadcursos';
             $this->load->view('view_home', $dados);
+        }
+    }
+
+    function listcarrinho()
+    {
+
+        $this->load->model('model_carrinho');
+        $dadoscarrinho = '';
+
+        $resultadoCarrinho = $this->model_carrinho->buscaCarrinho($dadoscarrinho);
+
+        $dados['resultadoCarrinho'] = $resultadoCarrinho;
+
+        $dados['telaativa'] = 'carrinho';
+        $dados['tela'] = 'carrinho/view_carrinhocompras';
+        $this->load->view('view_home', $dados);
+    }
+
+    function deletarCarrinho()
+    {
+        if ($this->input->get('id')) {
+            $id = (int) $this->input->get('id');
+            $this->load->model('model_carrinho');
+            $this->model_carrinho->deletarCarrinho($id);
+            redirect('home/listcarrinho', 'refresh');
         }
     }
 }

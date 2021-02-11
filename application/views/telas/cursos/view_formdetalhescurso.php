@@ -21,7 +21,7 @@
                         <form role="form" action="cadastrocarrinho" method="post" class="form-horizontal">
                             <div class="box-body">
                                 <?php
-                               
+
                                 $categoria = '';
                                 $nome_cursos = '';
                                 $preco = '';
@@ -39,12 +39,13 @@
                                 }
                                 ?>
                                 <div class="col-lg-2">
-                                <img  width="100%" height="100%" src="<?php echo $url_imagem; ?>" >
+                                    <img width="100%" height="100%" name="url" id="url" src="<?php echo $url_imagem; ?>">
                                 </div>
                                 <div class="col-lg-10">
                                     <div class="form-group">
                                         <label for="nome" class="col-sm-2 control-label">Nome</label>
                                         <input type="hidden" name="id" id="id" value="<?php echo set_value('id', $id); ?>" readonly="readonly">
+                                        <input type="hidden" name="url" id="url" value="<?php echo set_value('id', $url_imagem); ?>" readonly="readonly">
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="nome_cursos" name="nome_cursos" readonly="true" placeholder="Informe do curso" value="<?php echo set_value('nome_cursos', $nome_cursos); ?>">
                                         </div>
@@ -65,13 +66,13 @@
 
                                     </div>
                                     <div class="form-group">
-                                    <div class="col-xs-12 col-sm-9 col-lg-2">&nbsp;</div>
-                                    <div class="col-xs-12 col-sm-3 col-lg-3">
-                                        <button type="submit" class="btn btn-primary" style="width: 100%">Adicionar no carrinho</button>
+                                        <div class="col-xs-12 col-sm-9 col-lg-2">&nbsp;</div>
+                                        <div class="col-xs-12 col-sm-3 col-lg-3">
+                                            <button type="submit" class="btn btn-primary" style="width: 100%">Adicionar no carrinho</button>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
-                                
+
                             </div>
 
 

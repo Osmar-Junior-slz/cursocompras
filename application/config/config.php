@@ -368,11 +368,11 @@ $config['encryption_key'] = 'lkjfgjajdgjdslgnlkaehwtie32trlwlk';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
+$config['sess_cookie_name'] = '';
 $config['sess_expiration'] = 14400;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
-$config['sess_time_to_update'] = 300;
+$config['sess_time_to_update'] = 86400;
 $config['sess_regenerate_destroy'] = FALSE;
 
 /*
