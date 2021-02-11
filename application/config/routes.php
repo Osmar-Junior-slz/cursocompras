@@ -73,6 +73,7 @@ $route['profile'] = "home/profile";
  * Cursos
  */
 $route['listcursos'] = "home/listcursos";
+$route['consultacursos'] = "home/consultacursos";
 
 
 

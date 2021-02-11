@@ -35,8 +35,7 @@
                 $this->load->view('/template/topbar');
                 $this->load->view('/template/sidebar');
                 $this->load->view('/template/configbar');
-                
-                if ($tela !='') {
+                if (isset($tela)) { 
                     $this->load->view('telas/' . $tela);
                 }
                 $this->load->view('/template/footer');

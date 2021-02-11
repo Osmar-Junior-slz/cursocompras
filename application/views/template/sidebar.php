@@ -30,6 +30,7 @@
                         </a>
                         <ul class="treeview-menu">
                               <li><a href="listcursos"><i class="fa fa-circle-o"></i> Listar Cursos</a></li>
+                              <li><a href="consultacursos"><i class="fa fa-circle-o"></i> Consultar Cursos</a></li>
                         </ul>
                   </li>
 

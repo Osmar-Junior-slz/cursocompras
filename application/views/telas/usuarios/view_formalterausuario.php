@@ -12,9 +12,6 @@
             <div class="row">
                   <div class="col-xs-12 col-sm-12 col-lg-12">
                         <div class="box box-warning">
-<!--                              <div class="box-header with-border">
-                                    <h3 class="box-title">Altere as informações do usu&aacute;rio aqui!</h3>
-                              </div>-->
                               <?php
                               if (isset($msg)) {
                                     echo '<div class="box-header with-border">' . $msg . '</div>';
