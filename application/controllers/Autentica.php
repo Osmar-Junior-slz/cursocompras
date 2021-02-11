@@ -50,7 +50,7 @@ class Autentica extends CI_Controller {
                         }
 
                         $this->session->set_userdata('logged_in', 'TUDO CERTO');
-                        // echo('TEM USUARIO');
+                  
                          redirect('home/dashboard', 'refresh');
                   } else {
                        

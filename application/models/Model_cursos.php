@@ -18,6 +18,21 @@ class Model_cursos extends CI_Model {
   }
 
 
+  function consultaCursosPorID($id) {
+      $this->db->select('*');
+      $this->db->from('cursos');
+      $this->db->where('id', $id);
+
+      $query = $this->db->get();
+      if ($query->num_rows() === 1) {
+            return $query->result();
+      } else {
+            return false;
+      }
+}
+
+
+
   function consultaCursos($dados = NULL) {
       if ($dados !== NULL) {
             extract($dados);

@@ -30,8 +30,8 @@
                                           <table id="example1" class="table table-bordered table-striped">
                                                 <thead>
                                                       <tr>
-                                                            
-                                                            <th width="60%;">Curso</th>
+                                                            <th width="5%;">&nbsp</th>
+                                                            <th width="55%;">Curso</th>
                                                             <th width="30%;">Preco</th>
                                                             <th width="10%;"> Imagem</th>
                                                       </tr>
@@ -42,6 +42,7 @@
                                                             foreach ($resultadoCursos as $usuarios) {
                                                                   ?>
                                                                   <tr>
+                                                                        <td><a href="consultacursos?id=<?php echo $usuarios->id; ?>"><i class="fa fa-edit"></i></a></td>
                                                                         <td><?php echo $usuarios->nome_cursos; ?></td>
                                                                         <td><?php echo $usuarios->preco; ?></td>
                                                                         <td><img width="100px" height="80px"src="<?php echo $usuarios->url_imagem; ?>" > </td>
