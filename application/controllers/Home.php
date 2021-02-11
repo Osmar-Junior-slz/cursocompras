@@ -12,6 +12,7 @@ class Home extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper('form');
         date_default_timezone_set('America/Sao_Paulo');
+        
     }
 
     function index()
